@@ -1,6 +1,28 @@
-# SpeechSample
+# Speech API Sample
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
+
+## Environment Setup
+
+Before you get started with this project, make sure your environment is good to go.
+
+1. Install [Node.js](https://nodejs.org/en/download/)
+2. Install [Visual Studio Code](https://code.visualstudio.com/download)
+3. Install the [Angular CLI](https://cli.angular.io/)
+4. Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+NOTE: On Windows 10--with `npm` or `git` you may have to update your Environment Variables for the command line to know where they were installed.
+
+## Getting Started
+
+Now that you have your environment set up, you can finally start working with the sample code.
+
+1. `git clone https://github.com/cosmos-cognitive-cloud/COSMOS-Accelerators-Entity-Linking`
+2. Right click the project directory -> select `Open with Code`
+3. Ctrl + Shift + ` to open a terminal window
+4. Type `npm install` to download the project's packages
+5. Type `ng serve` to run the application via `http://localhost:4200/`.  The app will automatically reload if you change any of the source files.
+6. Success!  You should see a working demo of the Speech API built on Angular.
 
 ## Development server
 

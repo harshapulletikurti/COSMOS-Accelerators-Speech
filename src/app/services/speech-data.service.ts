@@ -69,7 +69,7 @@ export class SpeechDataService extends DataService {
         return new Promise<Blob>((resolve, reject) => {
             this.getToken(this.cognitiveApiService.subscriptionKeys.speech)
                 .then(token => {
-                    this.http.post(`https://speech.platform.bing.com/synthesize`,
+                    this.http.post(`https://vivatechapi.cosmos.ai/speech/v0/meter/tts`,
                     this.getSSML(text, locale, voiceName, gender)
                     , {
                         method: RequestMethod.Post,
@@ -112,7 +112,7 @@ export class SpeechDataService extends DataService {
             xhr.onloadend = () => {
                 resolve(xhr.response);
             }
-            xhr.open('POST', 'https://api.cognitive.microsoft.com/sts/v1.0/issueToken', true);
+            xhr.open('POST', 'https://vivatechapi.cosmos.ai/speech/v0/internalIssueToken', true);
             xhr.setRequestHeader('Content-Type', 'application/octet-stream');
             xhr.setRequestHeader('Ocp-Apim-Subscription-Key', key);
             xhr.send(null);

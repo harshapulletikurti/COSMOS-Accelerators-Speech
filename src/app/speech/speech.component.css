@@ -1,0 +1,143 @@
+h2 {
+    text-align: center;
+}
+h2.left-justify {
+    text-align: left;
+}
+.recognition-section {
+    margin-top: 40px;
+}
+.api-description img {
+    width: 100%;
+    padding-top: 50px;
+}
+.input-character-limit {
+    background: #E5EFF8;
+    padding: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.row-fluid.offcolored {
+    background: #fafafa;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.row.recognition {
+    background: #e5e5e5;
+    height: 50px;
+    position: relative;
+}
+.row.recognition .help-text {
+    padding-right: 100px;
+    padding-top: 15px;
+}
+.btn-mic {
+    background: #008272 url(../../content/mic.png) no-repeat center center;
+    background-size: 38%;
+    border-style: none;
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 35px;
+    text-indent: -300px;
+    right: 0px;
+    position: absolute;
+    top: -12px;
+    right: 15px;
+    outline: none;
+}
+
+.btn-mic.listening {
+    background: #008272 url(https://cosmosstore.blob.core.windows.net/cognitive-creative-content/Icons/listening.gif) no-repeat center center;
+    background-size: 100%;
+}
+
+.sel_wrap {
+    display: inline;
+}
+
+.sel_wrap > select {
+    border-radius: 0px;
+    height:50px;
+    padding: 5px 0 5px 10px;
+    width: 145px;
+    border-style: none;
+    color: #ffffff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: #cfcfcf url(../../content/arraw-down-white.png) no-repeat right 30px center;
+    background-size: 10px;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-right:10px;
+    /* font-family: 'Segoe UI Semilight'; */
+    font-size: 18px;
+}
+
+.api-description {
+    font-size: 18px;
+}
+
+.textarea {
+    min-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left:10px;
+    margin-right:10px;
+    padding: 10px;
+    width: 95%;
+    height: 300px;
+    background-color: #e5e5e5;
+    border-style: none;
+}
+
+.btn-speaker {
+    background-image: url(https://cosmosstore.blob.core.windows.net/cognitive-creative-content/Icons/speak.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 60%;
+}
+
+
+
+.btn-circle {
+    padding: 0;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 35px;
+    /*text-indent: -300px;*/
+    border-style: none;
+}
+
+
+.cosmosimagebutton {
+    padding-left: 45px;
+    background-repeat: no-repeat;
+    background-size: auto 15px;
+    background-position-y: center;
+    background-position-x: 5px;
+    text-indent: 0px;
+}
+
+.btn-download {
+    background-image: url(https://cosmosstore.blob.core.windows.net/cognitive-creative-content/Icons/download.png);
+}
+
+.btn-ssml {
+    background-image: url(https://cosmosstore.blob.core.windows.net/cognitive-creative-content/Icons/info.png);
+}
+
+.btn-play {
+    background-image: url(https://cosmosstore.blob.core.windows.net/cognitive-creative-content/Icons/wplay.png);
+}
+
+.row.start {
+    margin-top: 40px;
+}
+.modal {
+    display: block;
+}

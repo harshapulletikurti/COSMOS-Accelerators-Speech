@@ -1,0 +1,54 @@
+<div class="maindiv">
+    <div class="alert alert-danger" *ngIf="errorMessage">{{errorMessage}}</div>
+
+    <api-details-header 
+        apiTitle="Speaker Identification"
+        apiDescription="The Speaker Identification API allows one to identify the speaker in a given piece of recorded audio. Given a set of previously recorded and identified speakers, audio from an unknown source is compared against the data and a match is returned if found."
+        apiDescription2="Click the audio clip buttons below for a demo of this API using familiar personalities."
+        rowStyleClass="tablerow1"
+        >
+        <div api-content>
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="row speaker-section col-md-6 col-lg-6 col-sm-6 col-xs-12" style="text-align: left">
+                        Speakers Provided
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div *ngFor="let speaker of speakers" class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                    <img [src]="speaker.imageUrl" [style.opacity]="speaker.name == speakerName ? 1 : 0.5" style="margin:5px;" />
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <output-section style="height: 445px"
+                        [showButtons]="showCodeButtons" 
+                        [isApiResultLoading]="isLoading"
+                        buttonContextText="Results" 
+                        jsonText="{{ speakerIdentity | json }}"
+                    >
+                            <div formatted-output style="padding: 10px;">
+                                {{identificationMessage()}}
+                            </div>
+                    </output-section>
+                </div>
+                <div class="row container">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12"  style="margin-top: 10px;align-content: left; margin-left: 10px;margin-right: 10px;">
+                    <div *ngFor='let speaker of speakers; let i = index' class="col-xs-12 col-md-3 col-sm-6 col-lg-3">
+                        <button class="cosmosButton-withmargin btn btn-info " style="margin-left:5px;width:100%" (click)="identifySpeaker(i,speaker)" >
+                            Voice {{i+1}}
+                        </button>
+                        <audio>
+                            <source src="{{speaker.audio}}.ogg">
+                            <source src="{{speaker.audio}}.mp3">
+                        </audio>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+     </api-details-header>
+</div>
+
+
+

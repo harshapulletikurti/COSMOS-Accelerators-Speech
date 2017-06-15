@@ -69,15 +69,16 @@ export class SpeechDataService extends DataService {
         return new Promise<Blob>((resolve, reject) => {
             this.getToken(this.cognitiveApiService.subscriptionKeys.speech)
                 .then(token => {
-                    this.http.post(`https://vivatechapi.cosmos.ai/speech/v0/meter/tts`,
+                    this.http.post(`https://vivatechapi.cosmos.ai/speech/v0/synthesize`,
                     this.getSSML(text, locale, voiceName, gender)
                     , {
                         method: RequestMethod.Post,
                         responseType: ResponseContentType.Blob,
                         headers: new Headers({
-                            'Content-Type': 'application/x-www-form-urlencoded',
+                            'Content-Type': 'application/ssml+xml',
                             'Authorization': 'Bearer ' + token,
-                            'X-Microsoft-OutputFormat': 'audio-16khz-32kbitrate-mono-mp3'
+                            'X-Microsoft-OutputFormat': 'audio-16khz-32kbitrate-mono-mp3',
+                            'Ocp-Apim-Subscription-Key': this.cognitiveApiService.subscriptionKeys.speech
                         })
                     }).subscribe((response) => {
                         resolve(new Blob([response.blob()], { type: 'audio/wav' }));
@@ -112,7 +113,7 @@ export class SpeechDataService extends DataService {
             xhr.onloadend = () => {
                 resolve(xhr.response);
             }
-            xhr.open('POST', 'https://vivatechapi.cosmos.ai/speech/v0/internalIssueToken', true);
+            xhr.open('POST', 'https://vivatechapi.cosmos.ai/speech/v0/issueToken', true);
             xhr.setRequestHeader('Content-Type', 'application/octet-stream');
             xhr.setRequestHeader('Ocp-Apim-Subscription-Key', key);
             xhr.send(null);

@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { SpeakerRecognitionComponent } from './speaker-recognition/speaker-recognition.component';
 import { SpeechComponent } from './speech/speech.component';
 import * as $ from 'jquery';
 import { OutputSectionComponent } from './directives/output-section.component';
@@ -22,7 +21,6 @@ import { FeatureInfoItemComponent } from "app/directives/feature-info-line-item.
 @NgModule({
   declarations: [
     AppComponent,
-    SpeakerRecognitionComponent,
     SpeechComponent,
     ApiHeaderComponent,
     OutputSectionComponent,

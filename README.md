@@ -17,7 +17,7 @@ NOTE: On Windows 10--with `npm` or `git` you may have to update your Environment
 
 Now that you have your environment set up, you can finally start working with the sample code.
 
-1. `git clone https://github.com/cosmos-cognitive-cloud/COSMOS-Accelerators-Entity-Linking`
+1. `git clone https://github.com/cosmos-cognitive-cloud/COSMOS-Accelerators-Speech.git`
 2. Right click the project directory -> select `Open with Code`
 3. Ctrl + Shift + ` to open a terminal window
 4. Type `npm install` to download the project's packages

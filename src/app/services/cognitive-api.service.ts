@@ -1,19 +1,20 @@
 export class CognitiveApiService {
     subscriptionKeys = {
-        emotion: 'ec74eaadd31748cc9835dec61a47791c',
-        textAnalytics: '80b810070c7b4580aa3aadaa819b60ab',
-        computerVision: 'bb1f0f6b950f47daa9187ff26699aae8',
-        face: '34e8320f715e411e9837dd3d72b124f1',
-        video: '60437caf48404fde996a46a6b3d2ff7a',
-        speakerRecognition: '6fc5c859cee94cc7bd2833c4d729ea2e',
-        speech: '6fc5c859cee94cc7bd2833c4d729ea2e',
-        bingSearch: '13e6941894984c19bbef56aa023bb325',
-        bingAutosuggest: '957eaaecdd454406ae3b2f3f56aa2fb1',
-        entityLinking: 'af9ab232fe924760b8afecc652e54592',
-        linguistic: '33d675272e2f408d9526a760436323d8',
-        bingSpellCheck: '36d7f43796464280aaa357719e6eb30f', //SANKET BAKSHI's key. Need to be changed.
-        translation: '1fae7e4b369449d6a5bd50704b4c48b7', //SANKET BAKSHI
-        qnaMaker :'2e21889eb3744b8f83590b590341b1c9' //SANKET BAKSHI
+    // Add your own API keys here - only API keys used by this accelerator are needed
+      //  emotion: 'xxxxxx',
+      //  textAnalytics: 'xxxxxx',              
+      //  computerVision: 'xxxxxx',              
+      //  face: 'xxxxxx',              
+      //  video: 'xxxxxx',              
+      //  speakerRecognition: 'xxxxxx',              
+      //  speech: 'xxxxxx',              
+      //  bingSearch: 'xxxxxx',              
+      //  bingAutosuggest: 'xxxxxx',              
+      //  entityLinking: 'xxxxxx',              
+      //  linguistic: 'xxxxxx',              
+      //  bingSpellCheck: 'xxxxxx',              
+      //  translation: 'xxxxxx',              
+      //  qnaMaker :'xxxxxx'          
     };
 
     faceImageUrls = [
